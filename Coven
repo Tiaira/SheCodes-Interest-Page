@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coven</title>
+
+    <style>
+      h1 {
+        font-weight: 300;
+        color: #ffa07a;
+      }
+      body {
+        text-align: center;
+        font-family: Apple Chancery, cursive;
+        color: #ffa07a;
+        background-image: url(https://witchesbrewtours.com/wp-content/uploads/2018/01/Marie.jpg);
+      }
+      p {
+        line-height: 40px;
+        font-size: 25px;
+        margin: 30px 50px;
+      }
+      .wiki {
+        text-decoration: none;
+        color: #ffa07a;
+        font-size: 15px;
+      }
+      .wiki:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      .quacker {
+        text-decoration: none;
+        color: #ffa07a;
+      }
+      .quacker:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+      button {
+        font-size: 15px;
+        border: none;
+        border-radius: 30px;
+        margin: 20px 20px 50px 20px;
+        padding: 15px 15px;
+        cursor: pointer;
+        transition: all 300ms ease-in-out;
+      }
+      button:hover {
+        color: #ffa07a;
+        background-color: royalblue;
+      }
+      .me {
+        text-decoration: none;
+        color: #ffa07a;
+        padding: 10 10 10 10;
+      }
+      .me:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>
+      🕯 🔮 <br />
+      Hi Love, Welcome to The Coven!
+    </h1>
+    <hr />
+    <img
+      src="https://images.squarespace-cdn.com/content/v1/582253b52e69cf349618b8c6/1550168011638-4O27KOCLX9UK0KJG9SZY/ke17ZwdGBToddI8pDm48kDVrV8OpieQTQq18fx8UJ34UqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcK8xzjf8E2FaxMSdduxLpAZYkPly8Ki3BIM9vEhD7pE_8tZWKUpl7Qi2I_U6-Yt_t/Voodoo+Queen+Photo.jpg?format=1500w"
+      alt="Marie"
+      width="500"
+    />
+    <hr />
+    <p>
+      You might know of her as a character on
+      <em>American Horror Stories: Coven</em> but
+      <strong> Marie LaVeau: Voodoo Queen of New Orleans,</strong>lived a
+      fasinating life with spirit. To this day people from all over the world
+      visit her tomb at St. Louis Cementary in the French Quarter of New Orleans
+      in hopes that she will grant prayers and wishes. Come visit her and leave
+      behind gifts and offerings to experience her power of afterlife. Will she
+      grant your prayers and wishes too? 🎁 ⚰️
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Marie_Laveau"
+        target="_blank"
+        class="wiki"
+      >
+        Learn more on Marie_Laveau Wikipedia</a
+      >
+    </p>
+    <button>Visit Today</button>
+    <script>
+      function visitToday() {
+        let name = prompt("What is your full name?");
+        let phone = prompt("What is your phone number?");
+        let days = prompt("How many days do you plan to stay?");
+        let h1 = document.querySelector("h1");
+        h1.innerHTML =
+          "⚜️ <br /> Hi, " + name + ", we have you on the schedule!";
+        if (days > 10) {
+          alert(
+            (h1.innerHTML =
+              " ⚜️ <br /> Hi, " + name + ", we have you on the schedule!")
+          );
+        } else {
+          if (days < 9) {
+            alert(
+              (h1.innerHTML =
+                "⚜️ <br /> Sorry," +
+                name +
+                ", we're booked for the next 3 months. We will give you a call at " +
+                phone +
+                " when our schedule opens!")
+            );
+          }
+        }
+      }
+      let contactButton = document.querySelector("button");
+      contactButton = addEventListener("click", visitToday);
+    </script>
+    <br />
+    Coded by
+    <a
+      href="https://www.linkedin.com/in/tiaira-bates/"
+      target="_blank"
+      class="me"
+      >Tiaira Bates</a
+    >
+    <br />
+    For more information please visit
+    <a
+      href="http://www.thequakercampus.org/featuresblog/2019/2/13/black-history-month-marie-laveau"
+      target="_blank"
+      class="quacker"
+      >Quacker Campus Marie_Laveau</a
+    >
+  </body>
+</html>
